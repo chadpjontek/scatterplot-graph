@@ -1,28 +1,41 @@
-.App {
+:root {
+  --primary-color: #2B2D42;
+  --secondary-color: #ef233c;
+}
+body {
+  overflow: hidden;
+}
+h1{
   text-align: center;
+  color: var(--primary-color);
+  font: bold 25px Arial;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  font: italic 20px Arial;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+circle {
+  fill: var(--primary-color);
 }
-
-.App-title {
-  font-size: 1.5em;
+.doping {
+  fill: var(--secondary-color);
 }
-
-.App-intro {
-  font-size: large;
+div.tooltip {
+  color: #edf2f4;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: var(--primary-color);
+  border: 0px;
+  border-radius: 3px;
+  pointer-events: none;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.color {
+  color: var(--secondary-color);
+}
+svg g {
+  color: var(--primary-color);
 }
